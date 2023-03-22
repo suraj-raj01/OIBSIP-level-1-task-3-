@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+     <meta charset="UTF-8">
+     <meta http-equiv="X-UA-Compatible" content="IE=edge">
+     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+     <title>Suraj's Website</title>
+</head>
+
+<body>
+     <div class="center">
+          <fieldset aria-setsize="center">
+               <h1>
+                    <marquee scrollamount="10px"><b>Celsius to Fahrenheit Converter</b></marquee>
+               </h1>
+               <label><big>Enter Celsius:</big></label>
+               <input type="number" id="celsius" placeholder="Enter Celsius" />
+               <br><br><br>
+               <button onclick="CONVERT()">CONVERT</button>
+               <br><br><br>
+               <label><big>Fahrenheit: </big></label>
+               <input type="text" id="fahrenheit" readonly />
+               <aside><a href="https://www.linkedin.com/in/suraj-kumar-716120242/"><img src="https://cdn-icons-png.flaticon.com/512/174/174857.png" alt="Linkedin" height="13px"></a>
+               <a href="https://www.instagram.com/__suraj_aarya_01/"><img src="https://upload.wikimedia.org/wikipedia/commons/thumb/e/e7/Instagram_logo_2016.svg/2048px-Instagram_logo_2016.svg.png" height ="13px"  alt="Instagram"></a>
+               </aside>
+               
+               <script>
+                    function CONVERT() {
+                         var celsius = parseFloat(document.getElementById("celsius").value);
+                         var fahrenheit = (celsius * 1.8) + 32;
+                         document.getElementById("fahrenheit").value = fahrenheit.toFixed(2);
+                    }
+               </script>
+          </fieldset>
+     </div>
+
+     <div style="margin-left:80%">
+          <h2>Follow me on:
+          <a href="https://www.linkedin.com/in/suraj-kumar-716120242/"><img src="https://cdn-icons-png.flaticon.com/512/174/174857.png" alt="Linkedin" height="18px"></a>
+               <a href="https://www.instagram.com/__suraj_aarya_01/"><img src="https://upload.wikimedia.org/wikipedia/commons/thumb/e/e7/Instagram_logo_2016.svg/2048px-Instagram_logo_2016.svg.png" height ="18px"  alt="Instagram"></a></h2>
+     </div>
+     <style>
+          h2{
+
+               margin-left: 20%;
+          }
+          aside{
+              margin-left:75ex;
+              margin-left:75ex;
+              
+          }
+          label {
+
+               color: black
+          }
+
+          button {
+               margin-left: 7%;
+               font-size: large;
+               background-color: gold;
+               shape-outside: margin-box;
+               color: darkblue;
+               border-style: outset;
+          }
+
+          h1 {
+               color:navy;
+               margin-left: 15%;
+          }
+
+          fieldset {
+               background-color:sandybrown;
+               border-style: dotted;
+          }
+
+          .center {
+               position: absolute;
+               top: 45%;
+               left: 43%;
+               transform: translate(-30%, -30%);
+               width: 600px;
+               border: 600px;
+          }
+
+          div {
+               text-align: center;
+          }
+
+          body {
+               background-color:bisque;
+
+          }
+     </style>
+</body>
+
+</html>
